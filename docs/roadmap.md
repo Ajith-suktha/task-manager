@@ -1,6 +1,6 @@
 # Roadmap
 
-Current step: **Phase 0 — Environment and project setup**, next slice **0.8** (slices 0.1–0.7 done; 0.8 needs the repository hosted on a remote).
+Current step: **Phase 0 is complete** (slices 0.1–0.8 done, CI green). Next: **Phase 1 — Foundation and access control**, starting with slice 1.1.
 
 Full feature spec: `requirements.md`. Technical decisions: `decisions.md`. Quality bar for every slice: `engineering-standards.md` (section 8, definition of done).
 
