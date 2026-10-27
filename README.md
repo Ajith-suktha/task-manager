@@ -1,5 +1,7 @@
 # Task Management
 
+[![CI](https://github.com/Ajith-suktha/task-manager/actions/workflows/ci.yml/badge.svg)](https://github.com/Ajith-suktha/task-manager/actions/workflows/ci.yml)
+
 A web-based task management application for teams: projects, task assignment, workflow tracking, manual time tracking, reporting and audit history.
 
 - **Frontend:** Angular 22 (TypeScript, Angular Material), in `frontend/`
@@ -77,6 +79,10 @@ Useful addresses: health check http://localhost:8080/actuator/health, API docs h
 | Frontend tests | `frontend/` | `npx ng test --watch=false` |
 | Frontend lint | `frontend/` | `npx ng lint` |
 | Frontend build | `frontend/` | `npx ng build` |
+
+## Continuous integration
+
+GitHub Actions (`.github/workflows/ci.yml`) runs on every push and pull request: backend `./mvnw verify`, frontend lint, tests and build, an `npm audit` report and a secret scan. Dependabot (`.github/dependabot.yml`) opens weekly dependency update pull requests.
 
 ## Ports
 

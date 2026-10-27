@@ -132,6 +132,8 @@ Baseline rules already in `CLAUDE.md` still apply (secrets out of git, BCrypt, s
 |---|---|
 | Backend | `./mvnw verify` (compile, unit and integration tests) on JDK 21 |
 | Frontend | `npm ci`, `npx ng lint`, `npx ng test --watch=false`, `npx ng build` on Node 24 |
+| Secrets | gitleaks scans the full git history on every run |
+| Dependencies | frontend: `npm audit --audit-level=high` runs in CI as a report (not yet failing the build); backend: GitHub Dependabot alerts and weekly update pull requests (`.github/dependabot.yml`), because an in-pipeline Maven scanner is slow and needs an API key |
 | Both | run on every push and every pull request; a red build must be fixed before merging |
 
 ---

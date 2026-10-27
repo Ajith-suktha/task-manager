@@ -19,7 +19,7 @@ Milestone **★ Usable core** = Phases 0–3 (sign in, projects, tasks, workflow
 - [x] 0.5 Create the Angular project in `frontend/` (standalone, strict, Material); app shell with routing
 - [x] 0.6 Connect them: frontend calls backend health endpoint (dev proxy instead of CORS); fill in the Commands section of `CLAUDE.md`
 - [x] 0.7 `.gitignore`, README with run instructions, first commit
-- [ ] 0.8 CI pipeline: on every push and pull request, build and test both apps (backend `./mvnw verify` on JDK 21; frontend `npm ci`, `ng lint`, `ng test --watch=false`, `ng build` on Node 24), plus a dependency vulnerability report and secret scan. Needs the repository hosted on a remote (platform chosen then; GitHub Actions if it is GitHub). Details in `engineering-standards.md` section 4.2
+- [x] 0.8 CI pipeline: on every push and pull request, build and test both apps (backend `./mvnw verify` on JDK 21; frontend `npm ci`, `ng lint`, `ng test --watch=false`, `ng build` on Node 24), plus a dependency vulnerability report and secret scan. Needs the repository hosted on a remote (platform chosen then; GitHub Actions if it is GitHub). Details in `engineering-standards.md` section 4.2
 
 **Done when:** both apps start from the documented commands and the frontend shows the backend's health status; once the repository is hosted, CI runs green on push.
 
