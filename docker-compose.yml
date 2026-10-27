@@ -2,7 +2,7 @@
 # Credentials come from .env (copy .env.example to .env).
 services:
   mysql:
-    image: mysql:8.4
+    image: mysql:26.10
     container_name: taskmgmt-mysql
     restart: unless-stopped
     environment:
