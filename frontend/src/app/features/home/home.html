@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Welcome</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>The frontend skeleton is running.</p>
+
+    <p class="status" data-testid="backend-status">
+      @switch (status()) {
+        @case ('checking') {
+          Backend: checking…
+        }
+        @case ('up') {
+          Backend: connected (database up)
+        }
+        @case ('down') {
+          Backend: reachable, but reports a problem (is the database running?)
+        }
+        @case ('unreachable') {
+          Backend: unreachable (is it running on port 8080?)
+        }
+      }
+    </p>
+
+    @if (status() !== 'checking') {
+      <button matButton="outlined" type="button" (click)="check()">Check again</button>
+    }
+  </mat-card-content>
+</mat-card>

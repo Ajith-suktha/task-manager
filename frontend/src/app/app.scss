@@ -1,0 +1,11 @@
+// Material 3 has no `color="primary"` on the toolbar; set its colour tokens instead.
+.app-toolbar {
+  --mat-toolbar-container-background-color: var(--mat-sys-primary);
+  --mat-toolbar-container-text-color: var(--mat-sys-on-primary);
+}
+
+.content {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
