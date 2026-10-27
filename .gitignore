@@ -1,0 +1,15 @@
+# Secrets and local config (never commit; use .env.example for placeholders)
+.env
+.env.*
+!.env.example
+*.local
+.claude/settings.local.json
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
